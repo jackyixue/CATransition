@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "XYPageControlView.h"
-#import "XYPageControl.h"
+#import "XYPageControl1.h"
 @interface ViewController ()
 
 @property (strong, nonatomic)NSArray *picturs;
@@ -28,7 +28,7 @@
     [self.pageControlView setClickImage:^(NSString *nn) {
         NSLog(@"点击%@",nn);
     }];
-  //  [self.view addSubview:self.pageControl];
+   // [self.view addSubview:self.pageControl];
     
 }
 

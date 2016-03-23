@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Jack. All rights reserved.
 //
 
-#import "XYPageControl.h"
+#import "XYPageControl1.h"
 
 @implementation XYPageControl
 
@@ -14,6 +14,7 @@
     if (self = [super initWithFrame:frame]) {
         self.hidesForSinglePage = YES;
         self.defersCurrentPageDisplay = YES;
+        self.contentVerticalAlignment =UIControlContentVerticalAlignmentCenter;
     }
     return self;
 }
@@ -41,7 +42,7 @@
         
         //CGPoint point = pageView.frame.origin;
         
-       // [pageView setFrame:CGRectMake(point.x, point.y+4, 15, 15)];
+        [pageView setFrame:CGRectMake(0, 0, 15, 15)];
         
         if (i == self.currentPage) {
             pageView.backgroundColor = [UIColor blackColor];
