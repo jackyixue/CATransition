@@ -122,7 +122,7 @@
 
 //图片点击回调
 - (void)clickPicture{
-    self.clickImage([NSString stringWithFormat:@"%ld",self.pageControl.currentPage]);
+    self.clickImage([NSString stringWithFormat:@"%d",self.pageControl.currentPage]);
 }
 
 

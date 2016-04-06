@@ -21,13 +21,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.view addSubview:self.pageControlView];
-
+    //更新轮播器
     [self.pageControlView updateUIWithImages:self.picturs];
+    
     //图片点击回调
     [self.pageControlView setClickImage:^(NSString *nn) {
         NSLog(@"点击%@",nn);
     }];
+    
    // [self.view addSubview:self.pageControl];
     
 }
@@ -42,7 +45,7 @@
     
 }
 #pragma mark -- getter
-
+//懒加载，初始化
 - (XYPageControlView *)pageControlView{
     if (!_pageControlView) {
         _pageControlView = [[XYPageControlView alloc]initWithFrame:CGRectMake(0, 44, CGRectGetWidth(self.view.frame), 300)];
